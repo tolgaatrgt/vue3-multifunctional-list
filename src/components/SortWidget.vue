@@ -1,12 +1,12 @@
 <template>
   <div :class="$style['sort-widget-container']">
     <div
+      v-for="t in sortTypes"
+      :key="t.type"
       :class="[
         { [$style['active-sort']]: selectedSortType === t.type },
         $style['sort-widget-item'],
       ]"
-      v-for="t in sortTypes"
-      :key="t.type"
       @click="$emit(t.method)">
       <span :class="$style['sort-widget-prefix']">Sort by </span> {{ t.label }}
     </div>
