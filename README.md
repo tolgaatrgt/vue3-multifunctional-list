@@ -9,8 +9,6 @@ Multifunctional list built with Vue3 Composition API.
 - Non-empty value can be cleared through the clear button, or by pressing Escape
   key.
 - If the search bar is empty, the clear and add buttons becomes hidden.
-- Typing in search bar filters the displayed list by its value (case
-  insensitive).
 - If searched string (case insensitive) is already present in the list, the add
   button becomes disabled and appropriate item markes as "Exact match".
 - If no exact match is found, the add button becomes enabled and click on it (or
